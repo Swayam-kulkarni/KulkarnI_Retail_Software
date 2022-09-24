@@ -10,7 +10,7 @@ root = Tk()
 today = date.today()
 
 # Base
-db = mysql.connector.connect(user='root', password='swayam18', host='127.0.0.1', database="school_canteen")
+db = mysql.connector.connect(user='user_name', password='password', host='host_name', database="database_Name")
 mycursor = db.cursor()
 mycursor.execute("select * from entry")
 fetch = mycursor.fetchall()
